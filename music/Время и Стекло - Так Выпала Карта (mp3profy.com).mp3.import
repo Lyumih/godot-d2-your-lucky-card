@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Время и Стекло - Так Выпала Карта (mp3profy.com).mp3-7b8a8f793cc0af1b5edf34616dd329df.mp3str"
+
+[deps]
+
+source_file="res://music/Время и Стекло - Так Выпала Карта (mp3profy.com).mp3"
+dest_files=[ "res://.import/Время и Стекло - Так Выпала Карта (mp3profy.com).mp3-7b8a8f793cc0af1b5edf34616dd329df.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

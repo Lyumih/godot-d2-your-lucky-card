@@ -1,0 +1,47 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://themes/Game_Theme.tres" type="Theme" id=1]
+[ext_resource path="res://Card.gd" type="Script" id=2]
+
+[sub_resource type="StyleBoxFlat" id=1]
+border_width_left = 8
+border_width_top = 8
+border_width_right = 8
+border_width_bottom = 8
+border_blend = true
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+shadow_size = 8
+
+[node name="Card" type="PanelContainer" groups=[
+"card",
+]]
+margin_right = 14.0
+margin_bottom = 14.0
+rect_min_size = Vector2( 250, 350 )
+theme = ExtResource( 1 )
+custom_styles/panel = SubResource( 1 )
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+margin_left = 8.0
+margin_top = 8.0
+margin_right = 242.0
+margin_bottom = 342.0
+alignment = 1
+
+[node name="CardValue" type="Label" parent="VBoxContainer"]
+margin_top = 136.0
+margin_right = 234.0
+margin_bottom = 198.0
+rect_min_size = Vector2( 200, 0 )
+text = "Card"
+align = 1
+autowrap = true
+
+[connection signal="gui_input" from="." to="." method="_on_Card_gui_input"]
